@@ -220,7 +220,7 @@ body{
 			color: #aaa;
             font-size: 1.5rem;
 		}
-        .file   
+        .file
 		{
             margin-left: 1rem;
 			width: 100%;
@@ -437,7 +437,7 @@ body{
     .footer .credit {
         text-align: right;
     }
-    
+
     .footer .copyright {
         text-align: left;
     }
@@ -606,7 +606,7 @@ body{
         color: #aaa;
         font-size: 1.5rem;
     }
-    .file   
+    .file
     {
         margin-left: 0;
         width: 100%;
