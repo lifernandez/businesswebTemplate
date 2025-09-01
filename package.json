@@ -1,12 +1,10 @@
 {
   "name": "it-company-website",
   "version": "1.0.0",
-  "description": "## Overview",
-  "main": "footer.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "start": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +17,21 @@
   "bugs": {
     "url": "https://github.com/lifernandez/businesswebTemplate/issues"
   },
-  "homepage": "https://github.com/lifernandez/businesswebTemplate#readme"
+  "homepage": "https://github.com/lifernandez/businesswebTemplate#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^2.27.11",
+    "cross-env": "^10.0.0",
+    "cssnano": "^7.1.1",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.91.0"
+  }
 }
