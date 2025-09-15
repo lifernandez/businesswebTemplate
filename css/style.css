@@ -17,7 +17,11 @@ html{
 }
 
 body{
+    background-image: url("../images/home_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
+    background-blend-mode: luminosity;
 }
 
 .heading, .clients .section-header h2, .section-head h1, .testimonials .section-header h2, .section-head-1 h4{
@@ -25,7 +29,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    color: white;
     position: relative;
     letter-spacing: .2rem;
 }
@@ -35,13 +39,13 @@ body{
     position: absolute;
     height: 2.5rem;
     width: 2.5rem;
-    border-top: .4rem solid #002e5f;
-    border-left: .4rem solid #002e5f;
+    border-top: .4rem solid white;
+    border-left: .4rem solid white;
 }
 
 .faq .heading::before, .faq .heading::after{
-    border-top: .4rem solid #00bfff;
-    border-left: .4rem solid #00bfff;
+    border-top: .4rem solid white;
+    border-left: .4rem solid white;
 }
 
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
@@ -103,9 +107,9 @@ body{
     justify-content: space-between;
     width: 100%;
     padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* position: fixed; */
+    /* top: 0;
+    left: 0; */
     z-index: 100;
     /* border-bottom: 0.5px solid black;
     border-bottom-left-radius: 15px;
@@ -171,7 +175,7 @@ body{
 .home{
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/img1.jpg);
+    background-image: url(../images/simrhino.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -203,17 +207,18 @@ body{
     background-size: 100rem 11rem;
     animation: waves 15s linear infinite;
     background-repeat: repeat-x;
+    opacity: 0;
 }
 
 .home .wave2{
     animation-direction: reverse;
     animation-duration: 15s;
-    opacity: .3;
+    opacity: .1;
 }
 
 .home .wave3{
     animation-duration: 5s;
-    opacity: .5;
+    opacity: .1;
 }
 
 @keyframes waves{
@@ -261,7 +266,6 @@ body{
 .button-9:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(20, 20, 20, .5) 0 2px 2px 0;
 }
-
 .button-9:hover {
     transform: translateY(-5px);
     box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(20, 20, 20, .5) 0 2px 2px 0;
@@ -316,6 +320,7 @@ body{
     color: #333;
     padding: 1rem 0;
 }
+
 .about-cards-container{
    display: flex;
     width: 80%;
@@ -330,8 +335,18 @@ body{
 }
 .pt-5 .container .row .section-head p{
     font-size: 2rem;
-    color: #333;
+    color: white;
     padding: 1rem 0;
+}
+
+@media (max-width: 700px) {
+    .pt-5 .container .row .section-head p{
+        font-size: 2rem;
+        color: white;
+        padding: 1rem 0;
+        text-align: justify;
+    }
+
 }
   .section-head{
     margin-bottom: 60px;
@@ -345,7 +360,7 @@ body{
   }
   .item{
     height: 30rem;
-    background:#fff;
+    background:rgba(255, 255, 255, 0.07);
     text-align: center;
     padding:30px 17.5px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
@@ -366,13 +381,13 @@ body{
 
     }
 }
-  .item:hover{
-    background:#c8d8e4;
+  .item:hover, .item-cases:hover{
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
     -webkit-transition:all 0.3s ease 0s;
     transition:all 0.3s ease 0s;
     transform: translateY(-1%);
   }
+
   .item:hover .item,
   .item:hover span.icon{
     -webkit-transition:all 0.5s ease 0s;
@@ -382,11 +397,12 @@ body{
       font-size: 2rem;
   }
   .item:hover h6,
-  .item:hover p{
+  .item:hover p, .item-cases:hover h2, .item-cases:hover p{
     color:#2b6777;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
   }
+
   .item .icon{
     font-size:40px;
     margin-bottom: 25px;
@@ -408,7 +424,6 @@ body{
         line-height: 26px;
       }
   }
-
   .item h6{
     margin-bottom: 20px;
     color:#2f2f2f;
@@ -459,13 +474,13 @@ body{
 
   }
   .section-head-1 p{
-    color:#333;
+    color:white;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
   }
   .item{
-    background: #fff;
+    background:rgba(255, 255, 255, 0.07);
     text-align: center;
     padding:30px 17.5px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
@@ -480,7 +495,8 @@ body{
     height: 32rem;
   }
   .item:hover{
-    background-image: linear-gradient(to bottom right, rgb(62, 62, 177) 10%, #1b3c5e 100%, );
+    /* ITEM HOVER COLOU!!!R RIGHT HERE */
+    background: linear-gradient(to bottom right, rgba(29, 222, 80, 0.8) 10%, #f6e126 65%, #cc4c02 90% );
     background-position: right;
     transition: background-position 3s;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
@@ -509,18 +525,22 @@ body{
     border-radius: 50px;
   }
 
-
-
   .item p{
     font-size: 1.4rem;
     font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
     line-height: 3rem;
+    color: white;
   }
   .item h6{
     margin-bottom: 20px;
     font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
-    color:#2f2f2f;
+    color:white;
   }
+
+  .icon {
+    color: white;
+  }
+
 
 .communicate{
     text-align: center;
@@ -776,6 +796,7 @@ body{
 .contact{
     text-align: center;
     align-items: center;
+    background: transparent;
 }
 
 .contact .heading{
@@ -791,7 +812,7 @@ body{
       flex-wrap: wrap;
       padding: 10px;
       border-radius: 10px;
-      background: #fff;
+      background: transparent;
       box-shadow: 0px 0px 10px 0px #666;
     }
 
@@ -907,11 +928,11 @@ body{
 
         .footer {
             position: relative;
-            background: #333;
+            /* background: #333; */
         }
 
         .footer .footer-top {
-            background: #002e5f;
+            /* background: #002e5f; */
             padding: 60px 0 30px 0;
         }
 
@@ -1093,9 +1114,9 @@ body{
     }
 
     .header .navbar{
-        position: fixed;
+        /* position: fixed;
         top: -120%;
-        left: 0;
+        left: 0; */
         height: auto;
         width: 100%;
         background-color: white;
@@ -1104,9 +1125,9 @@ body{
     }
 
     .header-about .navbar {
-        position: fixed;
+        /* position: fixed;
         top: -120%;
-        left: 0;
+        left: 0; */
         height: auto;
         width: 100%;
         background-color: #00bfff;
@@ -1141,6 +1162,14 @@ body{
         color: #fff;
         font-size: 4rem;
     }
+
+
+    @media (max-width: 575px) {
+        .home h1 {
+            text-transform: uppercase;
+        }
+    }
+
 
     .home h2{
         color: #fff;
@@ -1224,7 +1253,7 @@ body{
       flex-wrap: wrap;
       padding: 10px;
       border-radius: 10px;
-      background: #fff;
+      background: transparent;
       box-shadow: 0px 0px 10px 0px #665;
     }
 
@@ -1245,12 +1274,13 @@ body{
       height: auto;
       flex: 50%;
       text-align: left;
+      color: white;
     }
     .contact-form-txt
     {
       width: 90%;
       height: 20px;
-      color: #000;
+      color: white;
       border: 1px solid #bcbcbc;
       border-radius: 5px;
       outline: none;
@@ -1262,7 +1292,7 @@ body{
             margin-left: 2rem;
       width: 90%;
       height: 20px;
-      color: #000;
+      color: white;
       border: 1px solid #bcbcbc;
       border-radius: 5px;
       outline: none;
@@ -1284,7 +1314,7 @@ body{
             margin-left: 2rem;
       width: 90%;
       height: 110px;
-      color: #000;
+      color: white;
       border: 1px solid #bcbcbc;
       border-radius: 5px;
       outline: none;
@@ -1304,7 +1334,7 @@ body{
             outline: none;
             border: none;
             border-radius: 5rem;
-            background: white;
+            background: transparent;
             border-style: groove;
             border-color: #002e5f;
             font-size: 1.5rem;
@@ -1317,7 +1347,7 @@ body{
             letter-spacing: .1rem;
             opacity: .9;
             color: white;
-            background: #002e5f;
+            background: transparent;
         }
     .contact-form-phone
     {
@@ -1378,4 +1408,11 @@ body{
 .whySim {
     text-align: center;
     position: relative;
+}
+
+input {
+    background: transparent;
+}
+textarea {
+    background: transparent;
 }

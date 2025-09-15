@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('.navbar').removeClass('nav-toggle');
 
         if ($(window).scrollTop() > 35) {
-            $('.header').css({ 'background': '#002e5f', 'box-shadow': '0 .2rem .5rem rgba(0,0,0,.4)' });
+            $('.header').css({ 'background': 'transparent', 'box-shadow': '0 .2rem .5rem rgba(0,0,0,.4)' });
         }
 
     });
