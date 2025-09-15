@@ -5,46 +5,92 @@
             <h4 style="margin-top: -5rem;" id="portfolio"><span>Our</span> Projects</h4>
 
             <p>The objective of IT Company is to enable a large number of youth to take up <br>industry-relevant skill training that will help them<br> in securing a better livelihood.
-              </p>
+            </p>
           </div>
 
-          <section class="col-lg-4 col-sm-6">
-              <div class="item" style="min-height: 680px;">
-                  <span class="icon feature_box_col_four">
-                      <i style="transform: rotate(-90deg);" class="fa fa-battery"></i>
-                  </span>
-                  <h2>E-Bike Controller Thermal Performance</h2>
-                  <p><strong>Industry:</strong> Micromobility</p>
-                  <h4>Challenge</h4>
-                  <p>Controller overheating due to solar loading was causing performance degradation and customer concerns.</p>
-                  <h4>Solution</h4>
-                  <p>We used Ansys Icepak for solar and thermal simulation, optimizing airflow and material selection.</p>
-                  <h4>Result</h4>
-                  <div style="display: flex; justify-content: space-between; width: 100%; margin-top: 5px; padding: 5px; flex-direction: column;">
-                      <div style="display: flex; flex: 0.3; flex-direction: column;"><i  class="fa fa-fire fa-3x"></i><p style="font-size: 11px; margin-top: 10px;">Hotspot temperature dropped by 14°C</p></div>
-                      <div style="display: flex; flex: 0.3; flex-direction: column;"><i class="fa fa-line-chart fa-3x"></i><p style="font-size: 11px; margin-top: 10px;">Improved summer reliability</p></div>
-                      <div style="display: flex; flex: 0.3; flex-direction: column;"><i class="fa fa-money fa-3x"></i><p style="font-size: 11px; margin-top: 10px;">Cost avoided from unnecessary hardware changes</p></div>
-                  </div>
-              </div>
-          </section>
 
-          <div class="col-lg-4 col-sm-6" >
-            <div class="item" style="min-height: 728px;">
-                <span class="icon feature_box_col_four">
-                      <i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
-                  </span>
-                  <h2>Phone Case Drop <br/> Simulation</h2>
-                  <p><strong>Industry:</strong> Consumer Accessories</p>
-                  <h4>Challenge</h4>
-                  <p>Reduce the time and cost of physical drop testing.</p>
-                  <h4>Solution</h4>
-                  <p>Simulated 3 heights with 2 materials using ANSYS Explicit Dynamics.</p>
-                  <h4>Result</h4>
-                  <div style="display: flex;">
-                      <div style="display: flex; flex-direction: column;"><i  class="fa fa-long-arrow-down fa-3x"></i><p style="font-size: 11px; margin-top: 10px;">Reduced prototyping cycles by 60%</p></div>
-                  </div>
-              </div>
-          </div>
-        </div>
-      </div>
+        <section class="py-5" style="padding: unset;">
+            <div class="container">
+                <div class="row g-4 align-items-stretch">
+                <!-- Left column: two vertical cards -->
+                <div class="col-md-6">
+                    <div class="vstack gap-4">
+                        <article class="shadow-sm">
+                            <div class="item">
+                                <span class="icon feature_box_col_four">
+                                    <i  style="transform: rotate(-90deg);" class="fa-solid fa-battery-full"></i>
+                                </span>
+                                <h2>E-Bike Controller Thermal Performance</h2>
+                                <p style="margin-top: 2rem;"><strong>Industry:</strong> Micromobility</p>
+                            </div>
+                            <div class="item" style="height: unset;">
+                                <span class="icon feature_box_col_four">
+                                    <i class="fa-solid fa-mobile-button"></i>
+                                </span>
+                                <h2>Phone Case Drop <br/> Simulation</h2>
+                                <p style="margin-top: 2rem;"><strong>Industry:</strong> Consumer Accessories</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Right column: two vertical paragraphs -->
+                <div class="col-md-6">
+                    <div class="vstack gap-4">
+                        <article class="para-block" style="min-height: 32rem; padding: 30px 0;">
+                            <h6 class="text-uppercase text-muted mb-2">Challenge</h6>
+                            <p class="mb-0">
+                            Controller overheating due <br/>to solar loading was <br/>causing performance degradation <br/>and customer concerns.
+                            </p>
+                            <br/>
+                            <h6 class="text-uppercase text-muted mb-2">Solution</h6>
+                            <p class="mb-0">
+                            We used Ansys Icepak <br/>for solar and thermal <br/>simulation, optimizing airflow <br/>and material selection.
+                            </p>
+                            <br/>
+                            <h6 class="text-uppercase text-muted mb-2">Details</h6>
+                            <p class="mb-0">
+                            This is the second paragraph block. <br/>Add any longer copy here; the container <br/>will grow naturally with content.
+                            </p>
+                        </article>
+                    </div>
+                    <br/>
+                    <div class="vstack gap-4">
+                        <article class="para-block" style="min-height: 32rem; padding: 0;">
+                            <h6 class="text-uppercase text-muted mb-2">Challenge</h6>
+                            <p class="mb-0">
+                            Controller overheating due <br/>to solar loading was <br/>causing performance degradation <br/>and customer concerns.
+                            </p>
+                            <br/>
+                            <h6 class="text-uppercase text-muted mb-2">Solution</h6>
+                            <p class="mb-0">
+                            We used Ansys Icepak <br/>for solar and thermal <br/>simulation, optimizing airflow <br/>and material selection.
+                            </p>
+                            <br/>
+                            <h6 class="text-uppercase text-muted mb-2">Details</h6>
+                            <p class="mb-0">
+                            This is the second paragraph block. <br/>Add any longer copy here; the container <br/>will grow naturally with content.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+<style>
+  /* Minimal custom styling for the paragraph blocks */
+  .para-block {
+    background-color: var(--bs-light);
+    border-radius: .75rem;
+    padding: 1.25rem;
+  }
+
+  /* Optional: ensure equal vertical rhythm when content heights differ */
+  @media (min-width: 768px) {
+    .card.h-100, .para-block { min-height: 200px; }
+  }
+</style>
+    </div>
+    </div>
 </div>
