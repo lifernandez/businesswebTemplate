@@ -41,9 +41,25 @@
                   </div>
               </div>
 
-              <div class="col-lg-3 col-md-6 footer-links">
-                <img src="./images/img0.png" style="width: 90%; height: 15rem;"/>
+              <div class="col-lg-3 col-md-6 footer-links flex-row">
+                <img class="footer-logo" src="./images/img0.png"/>
               </div>
+              <style>
+                .footer-logo{
+                  width: 20rem; height: 15rem;
+                  object-fit: cover;
+                } .flex-row{
+                  display: flex;
+                  justify-content: flex-start;
+                }
+                @media (max-width: 900px){
+                  .footer-logo{
+                  width: 15rem;
+                  height: 10rem;
+                  }
+                }
+
+              </style>
 
               <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
                   <h4>Subscription</h4>
