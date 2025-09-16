@@ -501,7 +501,7 @@ body{
     background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
     background-position: right;
     transition: background-position 3s;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.7s ease 0s;
   }
@@ -815,7 +815,7 @@ body{
       padding: 10px;
       border-radius: 10px;
       background: transparent;
-      box-shadow: 0px 0px 10px 0px #666;
+      box-shadow: 0px 0px 10px 0px #665;
     }
 
     .contact-map
@@ -1121,7 +1121,7 @@ body{
         left: 0; */
         height: auto;
         width: 100%;
-        background-color: rgba(12, 13, 70, 0.853);
+        background-color: rgb(11, 11, 33);
         z-index: 1000;
         border-top: .1rem solid rgba(0,0,0,.3);
     }
