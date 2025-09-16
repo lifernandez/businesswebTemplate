@@ -40,25 +40,49 @@
 
     </header>
   <section id="home" class="home">
-    <div style="width: 75%;">
+    <div style="width: 75%; z-index: 2;">
       <h1 style="font-size: 8.5rem; font-weight: bolder;">Sim Rhino</h1>
       <p style="font-size: 1.8rem; color:whitesmoke; width: 90%; margin: 0 auto;">Engineering Simulation for Smarter <br/>Product Development</p>
       <br/><br/><a href="contact_page.html"><button class="button-9" role="button" style="width: 27rem; font-size: 2rem; font-weight: 50;">Free consultation!</button></a>
     </div>
+    <img class="floating-img" src="./images/rhino.png" style="position: absolute; bottom: 2rem; left: -10rem; width: 120rem; height: 75rem; animation-delay: 3s;" />
+    <img class="floating-img" src="./images/transformer.svg" style="position: absolute; bottom: -5%; right: 10%; width: 95rem; animation-delay: 0.75s;" />
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
   </section>
 
+  <style>
+    .home-p {
+      font-size: 1.8rem;
+      color:whitesmoke;
+      width: 90%;
+      margin: 0 auto;
+    }
 
- <div id="about"></div>
- <script src="js/about.js"></script>
+    @media (max-width: 575px) {
+      .home-p {
+     text-align: justify;
+      }
+    }
+  </style>
 
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
- <div id="cases"></div>
- <script src="js/cases.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+<div >
+<!-- style="background-image: url('./images/home_background.png'); background-size: cover; " -->
+  <div id="about"></div>
+  <script src="js/about.js"></script>
+
+   <div id="cases"></div>
+   <script src="js/cases.js"></script>
+
+   <div id="contact"></div>
+   <script src="js/getInTouch.js"></script>
+</div>
 
 <a href="index.html" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
 <script src="lib/jquery/jquery.min.js"></script>
@@ -71,8 +95,6 @@
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
 
-  <div id="contact"></div>
-  <script src="js/getInTouch.js"></script>
 
   <div id="footer"></div>
   <script src="js/footer.js"></script>

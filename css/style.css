@@ -173,9 +173,10 @@ body{
 
 
 .home{
+    z-index: 1;
     min-height: 100vh;
     width: 100vw;
-    background-image: url(../images/simrhino.png);
+    background-image: url(../images/home_background.svg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -233,7 +234,7 @@ body{
 .button-9 {
   appearance: button;
   backface-visibility: hidden;
-  background-color: rgb(0, 46, 95);
+  background-color: rgba(255, 255, 255, 0.184);
   border-radius: 6px;
   border-width: 0;
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
@@ -376,12 +377,13 @@ body{
     align-items: center;
   }
 
-  @media (max-width: 575px) {
+  /* @media (max-width: 575px) {
     .item {
 
     }
-}
+} */
   .item:hover, .item-cases:hover{
+    background: linear-gradient(to bottom right,rgba(244, 247, 247, 0.76) 50%, rgba(194, 236, 243, 0.56) 100%);
     box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
     -webkit-transition:all 0.3s ease 0s;
     transition:all 0.3s ease 0s;
@@ -480,7 +482,7 @@ body{
     text-align: center;
   }
   .item{
-    background:rgba(255, 255, 255, 0.07);
+    background:rgba(255, 255, 255, 0.101);
     text-align: center;
     padding:30px 17.5px;
     box-shadow: 0 0 25px rgba(0,0,0,0.07);
@@ -496,7 +498,7 @@ body{
   }
   .item:hover{
     /* ITEM HOVER COLOU!!!R RIGHT HERE */
-    background: linear-gradient(to bottom right, rgba(29, 222, 80, 0.8) 10%, #f6e126 65%, #cc4c02 90% );
+    background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
     background-position: right;
     transition: background-position 3s;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
@@ -1113,13 +1115,13 @@ body{
         color: #00bfff;
     }
 
-    .header .navbar{
+     .navbar{
         /* position: fixed;
         top: -120%;
         left: 0; */
         height: auto;
         width: 100%;
-        background-color: white;
+        background-color: rgba(12, 13, 70, 0.853);
         z-index: 1000;
         border-top: .1rem solid rgba(0,0,0,.3);
     }
@@ -1133,6 +1135,19 @@ body{
         background-color: #00bfff;
         z-index: 1000;
         border-top: .1rem solid rgba(0,0,0,.3);
+    }
+
+    @media (max-width: 1200px){
+      .header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+      }
+      .header-about .navbar {
+        position: fixed;
+        top: -120%;
+        left: 0;
+      }
     }
 
     .header .navbar ul{
@@ -1415,4 +1430,14 @@ input {
 }
 textarea {
     background: transparent;
+}
+
+.floating-img {
+  animation: floatUpDown 3s ease-in-out infinite;
+  /* border: solid 1px red; */
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
