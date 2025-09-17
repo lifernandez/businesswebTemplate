@@ -23,18 +23,18 @@
                                         <h2 style="width: 70%; margin: 2rem auto 0 auto;">E-Bike Controller Thermal Performance</h2>
                                         <p style="margin-top: 2rem;"><strong>Industry:</strong> Micromobility</p>
                                     </div>
-                                    <article st class="para-block" style="flex:0.4; min-height: 32rem; padding: 30px 1rem;">
-                                        <h4 class="text-uppercase text-muted mb-2">Challenge</h6>
+                                    <article class="para-block" style="flex:0.4; min-height: 32rem; padding: 30px 1rem;">
+                                        <h6 class="text-uppercase mb-2">Challenge</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                         Controller overheating due to solar loading was causing performance degradation and customer concerns.
                                         </p>
                                         <br/>
-                                        <h4 class="text-uppercase text-muted mb-2">Solution</h6>
+                                        <h6 class="text-uppercase mb-2">Solution</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                             We used Ansys Icepak for solar and thermal simulation, optimizing airflow and material selection.
                                         </p>
                                         <br/>
-                                        <h4 class="text-uppercase text-muted mb-2">Results</h6>
+                                        <h6 class="text-uppercase mb-2">Results</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                             Hotspot temperature dropped by 14°C
                                         </p>
@@ -54,18 +54,18 @@
                                         <h2 style="width: 70%; margin: 2rem auto 0 auto;">Phone Case Drop Simulation</h2>
                                         <p style="margin-top: 2rem;"><strong>Industry:</strong> Consumer Accessories</p>
                                     </div>
-                                    <article st class="para-block" style="flex:0.4; min-height: 32rem; padding: 30px 1rem;">
-                                        <h4 class="text-uppercase text-muted mb-2">Challenge</h6>
+                                    <article class="para-block" style="flex:0.4; min-height: 32rem; padding: 30px 1rem;">
+                                        <h6 class="text-uppercase mb-2">Challenge</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                             Reduce the time and cost of physical drop testing.
                                         </p>
                                         <br/>
-                                        <h4 class="text-uppercase text-muted mb-2">Solution</h6>
+                                        <h6 class="text-uppercase mb-2">Solution</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                             Simulated 3 heights with 2 materials using ANSYS Explicit Dynamics.
                                         </p>
                                         <br/>
-                                        <h4 class="text-uppercase text-muted mb-2">Results</h6>
+                                        <h6 class="text-uppercase mb-2">Results</h6>
                                         <p style="font-size: 1.3rem;" class="mb-0">
                                             Reduced prototyping cycles by 60%
                                         </p>
@@ -87,17 +87,22 @@
         </section>
 
         <style>
-            /* Minimal custom styling for the paragraph blocks */
-            .para-block {
+            /* .para-block {
                 background-color: var(--bs-light);
                 border-radius: .75rem;
                 padding: 1.25rem;
                 text-align: justify;
-            }
+            } */
 
+            /* .case-card{
+              background: linear-gradient(to bottom right,rgba(10, 109, 109, 0.76) 50%, rgba(194, 236, 243, 0.56) 100%);
+              box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+              -webkit-transition:all 0.3s ease 0s;
+              transition:all 0.3s ease 0s;
+              transform: translateY(-1%);
+            } */
 
-            .item-cases {
-                /* height: 30rem; */
+            /* .item-cases{
                 background:rgba(255, 255, 255, 0.07);
                 text-align: center;
                 padding:30px 17.5px;
@@ -112,11 +117,20 @@
                 flex-direction: row;
                 justify-content:space-around;
                 color: white;
-                /* justify-content: flex-start; */
                 align-items: center;
+            } .item-cases:hover{
+              background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
+              color: rgb(228, 228, 228);
+              background-position: right;
+              transition: background-position 3s;
+              box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
+              -webkit-transition:all 0.5s ease 0s;
+              transition:all 0.7s ease 0s;
+            } */
+            .text-uppercase:hover{
+              color: white;
             }
 
-            /* Optional: ensure equal vertical rhythm when content heights differ */
             @media (min-width: 768px) {
                 .card.h-100, .para-block { min-height: 200px; }
             }
@@ -130,8 +144,6 @@
                     text-align: center;
                 }
             }
-
-
             </style>
     </div>
 </div>

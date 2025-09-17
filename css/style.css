@@ -382,12 +382,17 @@ body{
 
     }
 } */
-  .item:hover, .item-cases:hover{
-    background: linear-gradient(to bottom right,rgba(244, 247, 247, 0.76) 50%, rgba(194, 236, 243, 0.56) 100%);
-    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
-    -webkit-transition:all 0.3s ease 0s;
-    transition:all 0.3s ease 0s;
-    transform: translateY(-1%);
+
+
+
+  /* .item-cases:hover{
+    background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
+    color: rgb(228, 228, 228);
+    background-position: right;
+    transition: background-position 3s;
+    box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.7s ease 0s;
   }
 
   .item:hover .item,
@@ -398,12 +403,74 @@ body{
   .item h6{
       font-size: 2rem;
   }
-  .item:hover h6,
-  .item:hover p, .item-cases:hover h2, .item-cases:hover p{
-    color:#2b6777;
+  .item-cases:hover h6,
+  .item-cases:hover p,
+  .item-cases:hover h2{
+    color:#e3e3e3;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-  }
+  } */
+
+  /* CASE STUDY CARDS */
+.item-cases{
+  background: rgba(255,255,255,0.07);
+  color: #fff;
+  text-align: center;
+  padding: 30px 17.5px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.07);
+  border-radius: 20px;
+  margin: -2rem 0 30px;
+  border: 5px solid rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  /* smooth hover animation */
+  background-size: 200% 200%;
+  background-position: left;
+  transition: background-position 3s, box-shadow .7s, transform .3s, color .3s;
+}
+
+.item-cases:hover{
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(35, 248, 255, 0.571) 50%,
+    rgba(9, 166, 190, 0.507) 100%
+  );
+  background-position: right;
+  color: rgb(228, 228, 228);
+  box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
+  -webkit-transition:all 0.5s ease 0s;
+  transition:all 0.7s ease 0s;
+}
+
+/* Make sure inner text/icons actually change color on hover */
+.item-cases:hover h2,
+.item-cases:hover h6,
+.item-cases:hover p,
+.item-cases:hover .icon,
+.item-cases:hover .icon i,
+.item-cases:hover .text-muted {
+  color: rgb(228, 228, 228) !important; /* beat Bootstrap’s .text-muted */
+}
+
+/* Keep your existing helper styles */
+.para-block {
+  background-color: var(--bs-light);
+  border-radius: .75rem;
+  padding: 1.25rem;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .card.h-100, .para-block { min-height: 200px; }
+}
+
+@media (max-width: 575px) {
+  .item-cases { flex-direction: column; }
+  .para-block { text-align: center; }
+}
 
   .item .icon{
     font-size:40px;
@@ -428,14 +495,14 @@ body{
   }
   .item h6{
     margin-bottom: 20px;
-    color:#2f2f2f;
+    color:#e1e1e1;
   }
 
 .counters {
   background-image: url(../images/img2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
   color: #fff;
   padding: 40px 20px;
 }
@@ -499,6 +566,7 @@ body{
   .item:hover{
     /* ITEM HOVER COLOU!!!R RIGHT HERE */
     background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
+    color: rgb(228, 228, 228);
     background-position: right;
     transition: background-position 3s;
     box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
@@ -1121,9 +1189,9 @@ body{
         left: 0; */
         height: auto;
         width: 100%;
-        background-color: rgb(11, 11, 33);
+        background-color: rgb(17, 17, 30);
         z-index: 1000;
-        border-top: .1rem solid rgba(0,0,0,.3);
+        /* border-top: .1rem solid rgba(0,0,0,.3); */
     }
 
     .header-about .navbar {
