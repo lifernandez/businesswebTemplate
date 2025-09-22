@@ -174,7 +174,7 @@ body{
 
 .home{
     z-index: 1;
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
     background-image: url(../images/home_background.svg);
     background-size: cover;
@@ -187,6 +187,8 @@ body{
     position: relative;
     overflow: hidden !important;
 }
+
+
 
 .home h1{
     color: #fff;
@@ -298,7 +300,7 @@ body{
 
 .whySim .row .content p{
     font-size: 1.5rem;
-    color: #333;
+    color: white;
 }
 
 .whySim .row .content .item {
@@ -361,10 +363,10 @@ body{
   }
   .item{
     height: 30rem;
-    background:rgba(255, 255, 255, 0.07);
+    /* background:rgba(255, 255, 255, 0.07); */
     text-align: center;
     padding:30px 17.5px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 10px 0px #665;
     border-radius: 20px;
     margin-bottom: 30px;
     margin-top: -2rem;
@@ -382,17 +384,12 @@ body{
 
     }
 } */
-
-
-
-  /* .item-cases:hover{
+  .item:hover, .item-cases:hover{
     background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
-    color: rgb(228, 228, 228);
-    background-position: right;
-    transition: background-position 3s;
-    box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
-    -webkit-transition:all 0.5s ease 0s;
-    transition:all 0.7s ease 0s;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+    -webkit-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s;
+    transform: translateY(-1%);
   }
 
   .item:hover .item,
@@ -403,74 +400,12 @@ body{
   .item h6{
       font-size: 2rem;
   }
-  .item-cases:hover h6,
-  .item-cases:hover p,
-  .item-cases:hover h2{
-    color:#e3e3e3;
+  .item:hover h6,
+  .item:hover p, .item-cases:hover h2, .item-cases:hover p{
+    color:white;
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.5s ease 0s;
-  } */
-
-  /* CASE STUDY CARDS */
-.item-cases{
-  background: rgba(255,255,255,0.07);
-  color: #fff;
-  text-align: center;
-  padding: 30px 17.5px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.07);
-  border-radius: 20px;
-  margin: -2rem 0 30px;
-  border: 5px solid rgba(0,0,0,0.07);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
-  /* smooth hover animation */
-  background-size: 200% 200%;
-  background-position: left;
-  transition: background-position 3s, box-shadow .7s, transform .3s, color .3s;
-}
-
-.item-cases:hover{
-  background-image: linear-gradient(
-    to bottom right,
-    rgba(35, 248, 255, 0.571) 50%,
-    rgba(9, 166, 190, 0.507) 100%
-  );
-  background-position: right;
-  color: rgb(228, 228, 228);
-  box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
-  -webkit-transition:all 0.5s ease 0s;
-  transition:all 0.7s ease 0s;
-}
-
-/* Make sure inner text/icons actually change color on hover */
-.item-cases:hover h2,
-.item-cases:hover h6,
-.item-cases:hover p,
-.item-cases:hover .icon,
-.item-cases:hover .icon i,
-.item-cases:hover .text-muted {
-  color: rgb(228, 228, 228) !important; /* beat Bootstrap’s .text-muted */
-}
-
-/* Keep your existing helper styles */
-.para-block {
-  background-color: var(--bs-light);
-  border-radius: .75rem;
-  padding: 1.25rem;
-  text-align: justify;
-}
-
-@media (min-width: 768px) {
-  .card.h-100, .para-block { min-height: 200px; }
-}
-
-@media (max-width: 575px) {
-  .item-cases { flex-direction: column; }
-  .para-block { text-align: center; }
-}
+  }
 
   .item .icon{
     font-size:40px;
@@ -485,6 +420,11 @@ body{
   .item p{
     font-size: 2.5rem;
     line-height: 3rem;
+    color: white;
+  }
+
+  .item-cases h4 {
+    color: white;
   }
 
 @media (max-width: 575px) {
@@ -495,14 +435,14 @@ body{
   }
   .item h6{
     margin-bottom: 20px;
-    color:#e1e1e1;
+    color:#2f2f2f;
   }
 
 .counters {
   background-image: url(../images/img2.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
   color: #fff;
   padding: 40px 20px;
 }
@@ -549,10 +489,10 @@ body{
     text-align: center;
   }
   .item{
-    background:rgba(255, 255, 255, 0.101);
+    /* background:rgba(255, 255, 255, 0.101); */
     text-align: center;
     padding:30px 17.5px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    box-shadow: 0px 0px 10px 0px #665;
     border-radius: 20px;
     margin-bottom: 30px;
     border: 1px solid rgba(0,0,0,0.07);
@@ -566,10 +506,9 @@ body{
   .item:hover{
     /* ITEM HOVER COLOU!!!R RIGHT HERE */
     background: linear-gradient(to bottom right,rgba(35, 248, 255, 0.571) 50%, rgba(9, 166, 190, 0.507) 100%);
-    color: rgb(228, 228, 228);
     background-position: right;
     transition: background-position 3s;
-    box-shadow: 0 1px 1px 0 rgba(220, 220, 220, 0.2);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
     -webkit-transition:all 0.5s ease 0s;
     transition:all 0.7s ease 0s;
   }
@@ -867,6 +806,15 @@ body{
     text-align: center;
     align-items: center;
     background: transparent;
+    width: 100%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+    /* border: 1px solid red; */
 }
 
 .contact .heading{
@@ -883,7 +831,7 @@ body{
       padding: 10px;
       border-radius: 10px;
       background: transparent;
-      box-shadow: 0px 0px 10px 0px #665;
+      box-shadow: 0px 0px 10px 0px #666;
     }
 
     .contact-map
@@ -902,7 +850,7 @@ body{
       width: 100%;
       height: auto;
       flex: 50%;
-      text-align: left;
+      /* text-align: left; */
     }
     .contact-form-txt
     {
@@ -918,7 +866,7 @@ body{
     }
         .contact-form-email
     {
-            margin-left: 2rem;
+    margin-left: 2rem;
       width: 95%;
       height: 40px;
       color: #000;
@@ -1189,9 +1137,9 @@ body{
         left: 0; */
         height: auto;
         width: 100%;
-        background-color: rgb(17, 17, 30);
+        background-color: rgba(12, 13, 70, 0.853);
         z-index: 1000;
-        /* border-top: .1rem solid rgba(0,0,0,.3); */
+        border-top: .1rem solid rgba(0,0,0,.3);
     }
 
     .header-about .navbar {
@@ -1229,7 +1177,7 @@ body{
     }
 
     .header .navbar ul li a{
-        color: grey;
+        color: white;
         font-size: 2.4rem;
     }
 
@@ -1238,7 +1186,9 @@ body{
     }
 
     .header .nav-toggle{
-        top: 5.8rem;
+        top: 4.8rem;
+        background-color: rgb(4, 19, 37);
+        color: white;
     }
 
     .home h1{
@@ -1320,6 +1270,14 @@ body{
     .contact{
         text-align: center;
         align-items: center;
+        width: 100%;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4rem;
     }
 
     .contact .heading{
@@ -1355,7 +1313,7 @@ body{
     {
       width: 100%;
       height: auto;
-      flex: 50%;
+      flex: 1;
       text-align: left;
       color: white;
     }
@@ -1420,6 +1378,7 @@ body{
             background: transparent;
             border-style: groove;
             border-color: #002e5f;
+            color: white;
             font-size: 1.5rem;
             cursor: pointer;
             height: 3.5rem;
@@ -1500,10 +1459,62 @@ textarea {
     background: transparent;
 }
 
-.floating-img {
+.floating-img-1 {
   animation: floatUpDown 3s ease-in-out infinite;
+  position: absolute;
+  bottom: 2rem;
+  left: -10rem;
+  width: 120rem;
+  height: 75rem;
+  animation-delay: 3s;
   /* border: solid 1px red; */
 }
+
+.floating-img-2 {
+    position: absolute;
+    bottom: -5%;
+    right: 10%;
+    width: 95rem;
+    animation-delay: 0.75s;
+    animation: floatUpDown 3s ease-in-out infinite;
+
+}
+
+@media (max-width: 575px) {
+    .home {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: -20rem;
+        background-position-x: -105rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .home {
+        background-size: auto;
+        background-repeat: no-repeat;
+        /* background-position-y: -25vh;
+        background-position-x: -105rem; */
+    }
+}
+
+@media (max-width: 575px) {
+    .floating-img-1 {
+        bottom: 30vh;
+        left: -12vw;
+        width: auto;
+        object-fit: contain;
+        height: 50vh;
+    }
+    .floating-img-2 {
+        bottom: 5vh;
+        right: 2vw;
+        width: 52rem;
+        object-fit: cover;
+    }
+}
+
+
 
 @keyframes floatUpDown {
   0%, 100% { transform: translateY(0); }
