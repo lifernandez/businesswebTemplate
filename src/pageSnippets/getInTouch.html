@@ -3,7 +3,7 @@
 </section>
 <div class="contact-in">
     <div class="contact-map">
-<iframe
+<!-- <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32813944.695476685!2d-98.5795!3d39.8283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sContiguous%20United%20States!5e0!3m2!1sen!2sus!4v1691000000000"
   width="600"
   height="450"
@@ -11,10 +11,10 @@
   allowfullscreen=""
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+</iframe> -->
 </div>
     <div class="contact">
-        <form action="./contactme.php" method="POST">
+        <form class="contact-form" action="./contactme.php" method="POST">
             <input type="text" name="name" placeholder="Name" class="contact-form-txt" required>
             <!-- <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Contact number" maxlength="10" class="contact-form-phone"> -->
             <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
@@ -23,7 +23,7 @@
             <input type="file" name="references" placeholder="File" class="contact-form-email" style="border: none;">
             <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
             <input type="submit" value="Submit" name="submit" class="contact-form-btn">
-            <p style="color:white">Email us at: <a href="mailto:contact@simrhino.com">contact@simrhino.com</a></p>
+            <p>Email us at: <a href="mailto:contact@simrhino.com">contact@simrhino.com</a></p>
         </form>
     </div>
 </div>
