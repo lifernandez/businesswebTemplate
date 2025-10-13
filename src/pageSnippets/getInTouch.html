@@ -20,10 +20,24 @@
             <input type="email" name="email" placeholder="Email" class="contact-form-email" required>
             <input type="text" name="company" placeholder="Company" class="contact-form-email">
             <input type="text" name="project_description" placeholder="Project Description" class="contact-form-email">
-            <input type="file" name="references" placeholder="File" class="contact-form-email" style="border: none;">
+            <label for="file-upload" style="
+                    margin-left: 2rem;
+                    outline: none;
+                    border: none;
+                    border-radius: 5rem;
+                    border-style: groove;
+                    border-color: #002e5f;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    height: 3.5rem;
+                    width: 12rem;
+                    box-shadow: 0 .2rem .5rem rgba(0,0,0,.3);
+                    align-content: center;
+            "
+            class="file-upload-label">Upload File</label>
+            <input id="file-upload" type="file" name="references" class="file-input">
             <textarea placeholder="Your Message" name="message" class="contact-form-txtarea" required></textarea>
             <input type="submit" value="Submit" name="submit" class="contact-form-btn">
-            <p>Email us at: <a href="mailto:contact@simrhino.com">contact@simrhino.com</a></p>
         </form>
     </div>
 </div>
